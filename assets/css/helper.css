@@ -18,6 +18,7 @@
 
 .mar-r-5{ margin-right: 5px; }
 .mar-t-30{ margin-top: 30px; }
+.mar-t-50{ margin-top: 50px; }
 
 /* bg */
 .green-bg{
@@ -35,7 +36,9 @@
 .black-col{
 	color: #444242;
 }
-
+.green-col{
+	color: #17ae97;
+}
 
 /* btn */
 .btn-green{

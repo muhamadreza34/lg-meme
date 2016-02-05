@@ -584,3 +584,23 @@ img { max-width: 100%; }
 	color: #a0a1a2;
 }
 .info-table > tbody > tr > td{ border-top: none; }
+.min-sec{ 
+	color: #a0a1a2;
+	font-size: 14px;
+  line-height: 24px;
+}
+
+.head-title{
+	display: block;
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #e1e1e1;
+}
+.green-col h4{
+	font-size: 15px;
+}
+.head-title span{
+	color: #a0a1a2;
+	font-size: 14px;
+  line-height: 34px;
+}
