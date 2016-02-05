@@ -230,7 +230,62 @@
                       </tbody>
                     </table>
                   </div>
-                </div><!--end wrap-panel-->  
+                </div><!--end wrap-panel--> 
+
+                <div class="clearfix"></div>
+                
+                <!--tab-->
+                <div class="wrap-panel mar-t-10">
+                  
+                  <!--tab list-->
+                  <ul id="reviewTab" class="nav tab-post" role="tablist"> 
+                    <li role="presentation" class="active">
+                      <a href="#review" class="active"  role="tab" data-toggle="tab" aria-controls="review" aria-expanded="true">
+                      <span class="text-center">My Review</span>
+                      </a>
+                    </li> 
+                    <li role="presentation">
+                      <a href="#post" role="tab" data-toggle="tab" aria-controls="post">
+                        <span class="text-center">Post <i class="fa fa-pencil-square-o"></i></span>
+                      </a>
+                    </li> 
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content pad-10">
+                    <div role="tabpanel" class="tab-pane active" id="review" >
+
+                      <table class="table info-review">
+                        <tr> 
+                          <td>One Piece</td> 
+                          <td><span>7.5</span>/10</td>  
+                        </tr>
+                        <tr> 
+                          <td>Shokuguki no So...</td> 
+                          <td><span>8</span>/10</td>  
+                        </tr>
+                        <tr> 
+                          <td>One Piece</td> 
+                          <td><span>7.5</span>/10</td>  
+                        </tr>
+                        <tr> 
+                          <td>Shokuguki no So...</td> 
+                          <td><span>8</span>/10</td>  
+                        </tr>
+                        <tr> 
+                          <td>One Piece</td> 
+                          <td><span>7.5</span>/10</td>  
+                        </tr>
+                      </table>
+
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="post">
+                      <h2>testingsss</h2>
+                    </div>
+                  
+                  </div>
+                </div>
               </div>
 
               <div class="right-panel-sec">
@@ -408,11 +463,7 @@
 
     <script>
       autosize(document.querySelectorAll('textarea'));
-      $('#profiletab a').click(function (e) {
-        e.preventDefault()
-        $(this).tab('show')
-      })
-      $('#pop a').click(function (e) {
+      $('#reviewTab a').click(function (e) {
         e.preventDefault()
         $(this).tab('show')
       })

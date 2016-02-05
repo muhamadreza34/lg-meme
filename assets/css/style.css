@@ -654,3 +654,31 @@ img { max-width: 100%; }
 	min-height: 150px;
 	margin-bottom: 20px;
 }
+.tab-post > li > a{
+	width: 50%;
+	display: block;
+	background: #ffffff;
+	float: left;
+	padding: 12px;
+}
+.tab-post > li > a > span{
+	background: #c0bdbd;
+	display: block;
+}
+.tab-post > li > a.active{
+	background: #c0bdbd;
+} 
+.info-review{
+	font-size: 13px;
+	line-height: 30px;
+	color: #a0a1a2;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.info-review span{
+	color: #17ae97;
+}
+.table > tbody > tr > td {
+	border-bottom: 1px solid #ddd;
+	border-top: none !important;
+}
