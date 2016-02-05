@@ -41,7 +41,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #818181;
+  color: #17ae97;
 }
 a:focus {
   outline: none;
@@ -329,7 +329,7 @@ img { max-width: 100%; }
 	display: block;
 }
 .link-icon li:nth-child(1){
-	margin-left: -20px;
+	margin-left: -25px;
 }
 
 .fb-bg{	
@@ -337,7 +337,7 @@ img { max-width: 100%; }
 	font-size: 12px;
 	color: #ffffff;
 	border-radius: 0px;
-	width: 90px;
+	width: 80px;
   display: inline-block;
 }
 .tw-bg{ 
@@ -345,7 +345,7 @@ img { max-width: 100%; }
 	font-size: 12px;
 	color: #ffffff;
 	border-radius: 0px;
-	width: 90px;
+	width: 80px;
   display: inline-block;
 }
 .fb-bg:hover, .tw-bg:hover{
