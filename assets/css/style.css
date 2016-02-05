@@ -170,7 +170,7 @@ img { max-width: 100%; }
 	padding: 10px 8px;
 }
 .form-comment-home textarea{
-
+	resize: vertical !important;
 }
 .form-comment-home .link-upload{
 	display: block;
