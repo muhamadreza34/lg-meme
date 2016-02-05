@@ -113,15 +113,15 @@ img { max-width: 100%; }
 
 /* left panel */
 .left-panel-sec{
-	background: #fff;
-	border: 1px solid #e1e1e1;
-	width: 20%;
+	width: 220px;
 	float: left;
 	margin-top: 40px;
-
 }
 .left-panel-sec .wrap-panel{
 	display: block;
+	width: 220px;
+	background: #fff;
+	border: 1px solid #e1e1e1;
 }
 .left-panel-sec .wrap-panel li > a{
 	font-size: 12px !important;
@@ -141,6 +141,10 @@ img { max-width: 100%; }
 }
 .left-panel-sec .content-panel{
 	margin: 15px;
+}
+.uns-list{
+	margin-top: -2px;
+  border-top: none !important;
 }
 
 

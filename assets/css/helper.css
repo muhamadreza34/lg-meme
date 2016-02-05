@@ -25,6 +25,7 @@
 	color: #fff !important;
 	font-size: 10px !important;
 }
+.white-bg{ background: #fff;}
 
 /* color */
 .grey-color-xs{
@@ -74,6 +75,7 @@
 
 
 .bor-none{ border: none !important; }
+.bor-b-none{ border-bottom: none !important; }
 
 /* link */
 .left-link li{ 
