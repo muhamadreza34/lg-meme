@@ -397,7 +397,8 @@ img { max-width: 100%; }
 -------------------------------*/
 .tag{
 	float: left;
-	margin-left: 65px;
+	margin-left: 70px;
+	margin-top: 5px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 10px;
 	font-weight: 700;
