@@ -5,10 +5,14 @@
 .h-100per{ height: 100%;}
 
 /* margin */
+.mar-t-30{ margin-top: 30px; }
 .mar-t-40{ margin-top: 40px; }
+
 .mar-lm-5{ margin-left: -5px; }
+.mar-lm-10{ margin-left: -10px; }
 
 .pad-b-10{ padding-bottom: 10px; }
+.pad-b-30{ padding-bottom: 30px; }
 .pad-l-20{ padding-left: 20px; }
 
 .h-600{ height: 600px;}
@@ -38,6 +42,9 @@
 }
 .green-col{
 	color: #17ae97;
+}
+.navy-col{
+	color: #a0a1a2;	
 }
 
 /* btn */
@@ -92,6 +99,8 @@
 .left-link li a > img:hover{
 	opacity: 1;
 }
+
+.dis-cap{ text-transform: lowercase !important;}
 
 /* effect */
 .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
