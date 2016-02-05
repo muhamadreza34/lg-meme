@@ -128,7 +128,7 @@ img { max-width: 100%; }
 }
 .left-panel-sec .title{
 	background: #fafafa;
-	padding: 10px 15px;
+	padding: 10px 15px 2px 15px;
 	font-size: 13px;
 	color: #8c8e8f;
 }
@@ -569,6 +569,7 @@ img { max-width: 100%; }
 .link-menu{
 	border-bottom: 1px solid #e5e5e5;
 	margin-bottom: 1px;
+	padding-bottom: 12px !important;
 }
 .link-menu a{
 	color: #cdcece;

@@ -187,7 +187,7 @@
     <div class="col-md-12 tab-top">
       <div class="container">
         <div class="row">
-          <ul id="myTabs" class="nav nav-tabs" role="tablist">
+          <ul id="profiletab" class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">PROFILE</a></li>
             <li role="presentation"><a href="#favorites" aria-controls="favorites" role="tab" data-toggle="tab">FAVORITES</a></li>
             <li role="presentation"><a href="#logout" aria-controls="log out" role="tab" data-toggle="tab">LOG OUT</a></li>
@@ -195,7 +195,7 @@
 
           <!-- Tab panes -->
           <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="moment" >
+            <div role="tabpanel" class="tab-pane active" id="profile" >
               <div class="left-panel-sec">
                 
                 <div class="wrap-panel">
@@ -232,9 +232,6 @@
                   </div>
                 </div><!--end wrap-panel-->  
               </div>
-
-             
-
 
               <div class="right-panel-sec">
                 <div class="row">
@@ -284,11 +281,7 @@
                                   <span class="red-tag">spoiler</span> -->
                                 </div>
                               </div>
-                             
                             </div><!-- wrapper avatar -->
-
-
-
                           </div> <!--end col-md-12-->
                         
                         </div> 
@@ -349,7 +342,12 @@
                   </div><!--end ads-->
                 </div>
             </div>
-            <div role="tabpanel" class="tab-pane" id="other">
+            
+            <div role="tabpanel" class="tab-pane" id="favorites">
+              <div class="h-600"></div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="logout">
               <div class="h-600"></div>
             </div>
           </div>
@@ -371,7 +369,7 @@
 
     <script>
       autosize(document.querySelectorAll('textarea'));
-      $('#myTabs a').click(function (e) {
+      $('#profiletab a').click(function (e) {
         e.preventDefault()
         $(this).tab('show')
       })
