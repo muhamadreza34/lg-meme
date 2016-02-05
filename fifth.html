@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>League Meme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/helper.css" rel="stylesheet">
+    <link href="assets/css/hack.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+    <link href="assets/css/jquery-ui.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+        <!-- Modal Login-->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/close.png" alt="close"/></button>
+          <div class="modal-header bor-none">
+            <h2 class="modal-title mar-t-40" id="myModalLabel">Login to Your Account</h2>
+            <p class="grey-color-xs">You can connect with a social network</p>
+            <div class="connect-social">
+              <div class="col-md-5">
+                <div class="wrap-fb pull-right">
+                  <div class="connect-l-fb">
+                    <i class="fa fa-facebook"></i>
+                  </div>
+                  <div class="connect-r-fb">
+                    Facebook
+                  </div>
+                </div>
+              </div><!-- end col-md-6 -->
+              <div class="col-md-2">
+                <div class="center-block">
+                  <span class="circles">OR</span>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="wrap-gp pull-left">
+                  <div class="connect-l-gp">
+                    <img src="assets/img/gplus.png" alt="">
+                  </div>
+                  <div class="connect-r-gp">
+                    Google
+                  </div>
+                </div>
+              </div><!-- end col-md-6 -->
+            </div><!-- connect social -->
+          </div><!-- end modal header-->
+
+          <div class="modal-footer">
+            <p class="text-left black-col">Login with your Email Address</p>
+            <form>
+              <div class="form-group text-left">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group text-left">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <p class="text-right link-log">Forgot the password?</p>
+              </div>
+              <button type="submit" class="btn btn-login-green pull-left">Login</button>
+              <div class="clearfix"></div>
+              <p class="link-log text-left">Didn’t have an account? <a href="#">Sign up</a></p> 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div><!-- end modal -->
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-chocolate navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo-simple.png" alt="logo" />
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Discussion<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#about">Anime</a></li>
+            <li><a href="#contact">News</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right menu">            
+            <li>
+              <a href="../navbar/">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li class="active">
+              <a data-toggle="modal" data-target="#login">Login</a>
+            </li>
+            <li class="mar-t-10">
+              <button type="button" class="btn btn-green">Sign Up</button>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="info-account">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+
+            <div class="img-profile-big">
+              <img src="assets/img/logo-big.png" alt="logo-big" />
+            </div>
+
+            <div class="info">
+              <h1>Dian Khisma Wijaya</h1>
+              <ul class="text-center list-unstyled row">
+                <li class="col-md-2">
+                  <h5>FOLLLOWING</h5>
+                  <h2>4.500</h2>
+                </li>
+                <li class="col-md-2">
+                  <h5>FOLLOWERS</h5>
+                  <h2>1.278</h2>
+                </li>
+                <li class="col-md-2">
+                  <h5>POST COUNT</h5> 
+                  <h2>990</h2>
+                </li>
+              </ul>
+            </div>
+            
+          </div><!-- end col-md-9 -->
+
+          <div class="col-md-3 pull-right pad-r-none">
+            <div class="right-button">
+              <button type="button" class="btn btn-trans">Unfollow</button>
+              &nbsp;
+              <button type="button" class="btn btn-trans">Message</button>
+            </div>
+          </div>
+
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </div><!-- end info-account -->
+
+
+    <div class="col-md-12 tab-top">
+      <div class="container">
+        <div class="row">
+          <ul id="fifth" class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">SUMMARY</a></li>
+            <li role="presentation"><a href="#synopsis" aria-controls="synopsis" role="tab" data-toggle="tab">SYNOPSIS</a></li>
+            <li role="presentation"><a href="#background" aria-controls="background" role="tab" data-toggle="tab">BACKGROUND</a></li>
+
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="summary">
+              <div class="left-panel-sec">
+                <div class="wrap-panel">
+                  <div class="title-bl">
+                    <p>One Piece</p>
+                  </div>
+                  <div class="content-panel">
+                    <img src="assets/img/onepiece.png" alt="" class="w-100">
+                  </div>
+                </div><!-- end wrap-panel-->
+              </div><!-- left-panel-sec -->
+
+              <div class="right-panel-sec">
+                <div class="row">
+                  <div class="col-md-7 pad-l-20">
+
+                    <!-- tab -->
+                    <div class="row">
+                      
+                      <div class="col-md-8">
+                        <ul id="pop" class="nav pop-tabs" role="tablist"> 
+                          <li role="presentation" class="active">
+                            <a href="#popular" role="tab" data-toggle="tab" aria-controls="popular" aria-expanded="true">Popular</a>
+                          </li> 
+                          <li role="presentation" class="mar-lm-5">
+                            <a href="#news" role="tab" data-toggle="tab" aria-controls="news">News</a>
+                          </li> 
+                        </ul>
+                      </div>
+                      
+                      <div class="col-md-4">
+                        <div class="trolls">
+                          <a href="">
+                            <span class="linky">All The Things</span>
+                            <span>&nbsp;&nbsp;&nbsp;<img src="assets/img/icon/post/click.png"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-content">
+
+                      <!-- popular-->
+                      <div role="tabpanel" class="tab-pane active" id="popular"> 
+                        <div classs="row">
+                          <div class="col-md-12">
+                    
+                            <div class="wrapper-avatar pad-b-10 w-100">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body w-2000">
+                                  <h5>ADMIN</h5>
+                                  <span class="minute">15 min</span>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div>
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  <h5>23,975 points - 340 comments</h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body w-2000">
+                                  <h5>ADMIN</h5>
+                                  <span class="minute">15 min</span>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div>
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  <h5>23,975 points - 340 comments</h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body w-2000">
+                                  <h5>ADMIN</h5>
+                                  <span class="minute">15 min</span>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div>
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  <h5>23,975 points - 340 comments</h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body w-2000">
+                                  <h5>ADMIN</h5>
+                                  <span class="minute">15 min</span>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div>
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  <h5>23,975 points - 340 comments</h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body w-2000">
+                                  <h5>ADMIN</h5>
+                                  <span class="minute">15 min</span>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div>
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  <h5>23,975 points - 340 comments</h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body w-2000">
+                                  <h5>ADMIN</h5>
+                                  <span class="minute">15 min</span>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div>
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  <h5>23,975 points - 340 comments</h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                          </div> <!--end col-md-12-->
+                        </div> 
+                      </div>
+
+                      <!-- news -->
+                      <div role="tabpanel" class="tab-pane" id="news"> 
+                        <p>
+                          .
+                        </p> 
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-5 ads">
+                    <img src="assets/img/ads.png" alt="ads" class="img-responsive" />
+                    <!--bannner-->
+                    <div class="banner">
+                      <img src="assets/img/idea.png" alt="banner" class="img-responsive" />
+                      <h4>Nice Guys</h4>
+                    </div>
+                    <!--bannner-->
+                    <div class="banner">
+                      <img src="assets/img/banner2.png" alt="banner" class="img-responsive" />
+                      <h4>What is she</h4>
+                    </div>
+
+                    <!-- social -->
+                    <div class="social-network">
+                      <ul class="list-unstyled">
+                        <li>
+                          <div class="link"><i class="fa fa-facebook"></i></div>
+                          <p class="text-con">50K</p>
+                        </li>
+                        <li>
+                          <div class="link"><i class="fa fa-twitter"></i></div>
+                          <p class="text-con">1K</p>
+                        </li> 
+                        <li>
+                          <div class="link"><i class="fa fa-instagram"></i></div>
+                          <p class="text-con">30K</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="link-bottom">
+                    <ul class="list-unstyled">
+                      <li><a href="#">Advertise</a></li>
+                      <li><a href="#">Contacts</a></li>
+                      <li><a href="#">Privacy</a></li>
+                      <li><a href="">Terms</a></li>
+                    </ul>
+                    <p class="text-center copyright">Copyright © All Rights Reserved</div>
+                  </div>
+                  
+                  </div><!--end ads-->
+                </div><!-- end link bottom -->
+              </div>
+              <div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane h-600" id="synopsis">
+              <h1>Testing</h1>
+            </div>
+            
+            <div role="tabpanel" class="tab-pane h-600" id="background">
+              <h1>yuhuuuuu</h1>
+            </div>
+
+          </div>
+        </div><!-- end row -->
+      </div><!-- end container -->
+
+    </div><!-- end col-md-12 -->
+    
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script>
+      $('#fifth a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+      $('#pop a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    </script>
+    
+  </body>
+</html>

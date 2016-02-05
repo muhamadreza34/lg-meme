@@ -1,0 +1,33 @@
+/* hack bootstrap */
+.navbar-chocolate{
+	background: #3e3a3a;
+	min-height: 70px;
+	color: #fff;
+}
+.nav > li > a{
+	color: #fff;
+	font-size: 13px;
+}
+.navbar-brand {
+  height: 40px;
+  padding: 10px 40px 10px 10px;
+}
+.navbar-collapse{ margin-top: 5px; }
+
+
+.w-2000{
+	width: 2000px;
+}
+.w-100{ width: 100%; }
+
+#myTabs{
+	margin-top: -50px;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: #5A5555;
+  border-color: #337ab7;
+}
+.menu > li > a:hover, .menu > li > a:focus{ 
+	color: #e4ac39; 
+	background: transparent;
+}
